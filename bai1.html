@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    var toan, van, anh;
+    do {
+        toan = parseFloat(prompt("Nhap diem toan"));
+    } while (toan > 10 || toan < 0);
+    do {
+        van = parseFloat(prompt("Nhap diem van"));
+    } while (van > 10 || van < 0);
+    do {
+        anh = parseInt(prompt("Nhap diem tieng anh"));
+    } while (anh > 10 || anh < 0);
+    var diemtb = (toan * 2 + van + anh * 2) / 5;
+    if (diemtb < 5) {
+        alert("Diem trung binh la :" + diemtb + "Ket qua :Khong dat");
+    }else
+    {
+        if (diemtb >= 5 && diemtb < 7.5) {
+            alert("Diem trung binh la :" + diemtb + "Ket qua :Dat");
+    }else
+    {
+        if (diemtb >= 7.6 && diemtb < 8.5) {
+            alert("Diem trung binh la :" + diemtb + "Ket qua :Kha");
+    }else
+    {
+        alert("Diem trung binh la :" + diemtb + "Ket qua :Tot"
+    )
+    ;
+    }
+    }
+    }
+</script>
+
+
+</body>
+</html>
